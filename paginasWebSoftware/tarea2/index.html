@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR SAGA | Episodes I-VI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="star">✦</span> STAR WARS: The Original Saga
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">EPISODES I–VI</h1>
+            <p class="hero-subtitle">The Complete Skywalker Saga</p>
+            <a href="#movies" class="cta-button">BEGIN THE JOURNEY</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>A Long Time Ago, in a Galaxy Far, Far Away...</h2>
+                <p>From the political intrigue of the prequel era to the heroic rebellion of the original trilogy, these
+                    six films tell the tragic and triumphant story of Anakin Skywalker and his children. Explore the
+                    classics that defined a generation.</p>
+            </div>
+        </section>
+
+        <section id="movies" class="movies-section">
+            <div class="container">
+                <h2 class="section-title">THE FILMS</h2>
+
+                <!-- Prequel Trilogy -->
+                <div class="trilogy-header">
+                    <h3>PREQUEL TRILOGY (1999–2005)</h3>
+                </div>
+
+                <div class="movie-grid">
+                    <!-- Episode I -->
+                    <div class="movie-card">
+                        <div class="movie-poster" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/ep1.jpeg');">
+                            <div class="episode-badge">EPISODE I</div>
+                        </div>
+                        <div class="movie-info">
+                            <h4>The Phantom Menace</h4>
+                            <span class="year">1999</span>
+                            <p class="director">Directed by George Lucas</p>
+                            <p class="short-desc">Two Jedi uncover a sinister plot while protecting a young queen from
+                                an invasion.</p>
+                            <button class="read-more" onclick="showModal(1)">Read Review →</button>
+                        </div>
+                    </div>
+
+                    <!-- Episode II -->
+                    <div class="movie-card">
+                        <div class="movie-poster"
+                            style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/ep2.jpeg');">
+                            <div class="episode-badge">EPISODE II</div>
+                        </div>
+                        <div class="movie-info">
+                            <h4>Attack of the Clones</h4>
+                            <span class="year">2002</span>
+                            <p class="director">Directed by George Lucas</p>
+                            <p class="short-desc">A young Jedi's forbidden romance blossoms as the galaxy edges toward
+                                civil war.</p>
+                            <button class="read-more" onclick="showModal(2)">Read Review →</button>
+                        </div>
+                    </div>
+
+                    <!-- Episode III -->
+                    <div class="movie-card">
+                        <div class="movie-poster"
+                            style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/ep3.jpeg');">
+                            <div class="episode-badge">EPISODE III</div>
+                        </div>
+                        <div class="movie-info">
+                            <h4>Revenge of the Sith</h4>
+                            <span class="year">2005</span>
+                            <p class="director">Directed by George Lucas</p>
+                            <p class="short-desc">The fall of the Republic and the rise of Darth Vader reach their
+                                tragic climax.</p>
+                            <button class="read-more" onclick="showModal(3)">Read Review →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Original Trilogy -->
+                <div class="trilogy-header originals">
+                    <h3>ORIGINAL TRILOGY (1977–1983)</h3>
+                </div>
+
+                <div class="movie-grid">
+                    <!-- Episode IV -->
+                    <div class="movie-card">
+                        <div class="movie-poster"
+                            style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/ep4.jpeg');">
+                            <div class="episode-badge">EPISODE IV</div>
+                        </div>
+                        <div class="movie-info">
+                            <h4>A New Hope</h4>
+                            <span class="year">1977</span>
+                            <p class="director">Directed by George Lucas</p>
+                            <p class="short-desc">A young farm boy joins a daring rescue mission and discovers his
+                                destiny.</p>
+                            <button class="read-more" onclick="showModal(4)">Read Review →</button>
+                        </div>
+                    </div>
+
+                    <!-- Episode V -->
+                    <div class="movie-card">
+                        <div class="movie-poster"
+                            style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/ep5.jpeg');">
+                            <div class="episode-badge">EPISODE V</div>
+                        </div>
+                        <div class="movie-info">
+                            <h4>The Empire Strikes Back</h4>
+                            <span class="year">1980</span>
+                            <p class="director">Directed by Irvin Kershner</p>
+                            <p class="short-desc">The Rebels face their greatest defeat as Luke trains with the
+                                legendary Jedi Master Yoda.</p>
+                            <button class="read-more" onclick="showModal(5)">Read Review →</button>
+                        </div>
+                    </div>
+
+                    <!-- Episode VI -->
+                    <div class="movie-card">
+                        <div class="movie-poster"
+                            style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/ep6.jpeg');">
+                            <div class="episode-badge">EPISODE VI</div>
+                        </div>
+                        <div class="movie-info">
+                            <h4>Return of the Jedi</h4>
+                            <span class="year">1983</span>
+                            <p class="director">Directed by Richard Marquand</p>
+                            <p class="short-desc">The final battle against the Empire and the redemption of Darth Vader.
+                            </p>
+                            <button class="read-more" onclick="showModal(6)">Read Review →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="legacy" class="legacy">
+            <div class="container">
+                <h2>The Enduring Legacy</h2>
+                <p>These six films revolutionized cinema, special effects, and storytelling. From John Williams' iconic
+                    score to groundbreaking visual effects, Star Wars continues to inspire generations. The Force
+                    remains strong.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>May the Force be with you.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script>
+        const movieData = {
+            1: {
+                title: "Episode I: The Phantom Menace",
+                year: "1999",
+                content: `<h3>The Phantom Menace (1999)</h3>
+                <p>George Lucas returned to Star Wars after 16 years with a visually stunning prequel that explores the origins of Anakin Skywalker and the political machinations that would lead to the fall of the Republic.</p>
+                <p><strong>Highlights:</strong> The epic pod race sequence, Duel of the Fates, and the introduction of Darth Maul.</p>`
+            },
+            2: {
+                title: "Episode II: Attack of the Clones",
+                year: "2002",
+                content: `<h3>Attack of the Clones (2002)</h3>
+                <p>The Republic teeters on the brink of civil war as Anakin and Padmé's forbidden romance develops. Massive clone armies are revealed as the stage is set for the Clone Wars.</p>`
+            },
+            3: {
+                title: "Episode III: Revenge of the Sith",
+                year: "2005",
+                content: `<h3>Revenge of the Sith (2005)</h3>
+                <p>The darkest chapter. Order 66 is executed, the Jedi are hunted, and Anakin Skywalker fully embraces the dark side to become Darth Vader. A masterpiece of tragedy.</p>`
+            },
+            4: {
+                title: "Episode IV: A New Hope",
+                year: "1977",
+                content: `<h3>A New Hope (1977)</h3>
+                <p>The film that started it all. Luke Skywalker leaves Tatooine, meets Obi-Wan Kenobi, and joins the Rebel Alliance to destroy the Death Star.</p>`
+            },
+            5: {
+                title: "Episode V: The Empire Strikes Back",
+                year: "1980",
+                content: `<h3>The Empire Strikes Back (1980)</h3>
+                <p>Widely regarded as the best Star Wars film. "I am your father." Iconic twists, Yoda's training, and the Battle of Hoth make this a masterpiece.</p>`
+            },
+            6: {
+                title: "Episode VI: Return of the Jedi",
+                year: "1983",
+                content: `<h3>Return of the Jedi (1983)</h3>
+                <p>The saga concludes with the Battle of Endor, the destruction of the second Death Star, and the redemption of Anakin Skywalker.</p>`
+            }
+        };
+
+        function showModal(ep) {
+            const modal = document.getElementById('movieModal');
+            const body = document.getElementById('modal-body');
+            body.innerHTML = movieData[ep].content;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('movieModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            const modal = document.getElementById('movieModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: rgba(10, 10, 20, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #ffd700;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffd700;
+    letter-spacing: 3px;
+}
+
+.star {
+    color: #00ccff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ccff;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('images/bg.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 40%, rgba(0, 20, 50, 0.8) 100%);
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem;
+    color: #ffd700;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    margin-bottom: 0.5rem;
+    letter-spacing: 8px;
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    color: #00ccff;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 40px;
+    background: transparent;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.cta-button:hover {
+    background: #ffd700;
+    color: #0a0a0a;
+    transform: scale(1.05);
+}
+
+/* Sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.intro {
+    padding: 6rem 0;
+    text-align: center;
+    background: #111827;
+}
+
+.intro h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #00ffcc;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem 0 3rem;
+    color: #ffd700;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #00ccff, #ffd700);
+    margin: 15px auto;
+}
+
+/* Movie Grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.movie-card {
+    background: #1a2333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #334155;
+}
+
+.movie-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 30px rgba(0, 204, 255, 0.2);
+}
+
+.movie-poster {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.episode-badge {
+    background: rgba(255, 215, 0, 0.9);
+    color: #000;
+    padding: 4px 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.movie-info {
+    padding: 1.5rem;
+}
+
+.movie-info h4 {
+    color: #ffd700;
+    margin-bottom: 0.3rem;
+}
+
+.year {
+    color: #00ccff;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.director {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.short-desc {
+    color: #cbd5e1;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.read-more {
+    background: none;
+    border: 1px solid #00ccff;
+    color: #00ccff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.read-more:hover {
+    background: #00ccff;
+    color: #0a0a0a;
+}
+
+/* Trilogy Headers */
+.trilogy-header {
+    margin: 3rem 0 1.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #1e2937, #334155);
+    border-left: 6px solid #ff3333;
+}
+
+.originals {
+    border-left-color: #00cc66;
+}
+
+.trilogy-header h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #e0e0e0;
+    font-size: 1.6rem;
+}
+
+/* Legacy */
+.legacy {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #0f172a, #1e2937);
+    text-align: center;
+}
+
+.legacy h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffd700;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+    background-color: #1a2333;
+    margin: 8% auto;
+    padding: 2.5rem;
+    border: 3px solid #ffd700;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff5555;
+}
+
+/* Footer */
+footer {
+    background: #050505;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 2px solid #334155;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3.2rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+
+.poster {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border: 3px solid var(--border-subtle);
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease;
+}
+
+.film-card:hover .poster {
+    transform: scale(1.03);
+}
+
+.card-saber-line {
+    box-shadow: 0 0 12px currentColor,
+        0 0 25px currentColor;
+}
+
+.film-card {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
